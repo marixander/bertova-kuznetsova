@@ -1,8 +1,30 @@
+html
+    font-size: 10px
 body
-    +bold
-    color: $secondary-text
-// img
-//     max-width: 100%
+    +light
+    color: $black
+img
+    max-width: 100%
+button, input, textarea, a
+    &:focus
+        outline: none
+ul
+    padding-left: 0
+li
+    list-style: none
+a
+    text-decoration: none
+.btn
+    &__fb
+        font-size: 18px
+        vertical-align: center
+        border-radius: 3px
+        &:before
+            font-size: 22px
+            vertical-align: center
+    &__insta
+        font-size: 28px
+        vertical-align: center
 // .section
 //     padding: 100px 0
 //     &-title
