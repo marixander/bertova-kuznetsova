@@ -1,0 +1,48 @@
+.consult
+    background-color: #fdfdfd
+    position: relative
+    height: 720px
+    &__bg
+        position: absolute
+        z-index: 6
+        top: 1px
+        left: 0
+        width: 100%
+        height: 100%
+    .content
+        z-index: 10
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__form
+        margin-top: 90px
+        margin-bottom: 100px
+        &-group
+            display: block
+            width: 380px
+            height: 30px
+            margin-top: 20px
+            position: relative
+            img
+                position: absolute
+                bottom: 5px
+                right: 10px
+    &__input
+        padding: 0
+        background-color: transparent
+        color: $black
+        font-size: 1.4rem
+        border: none
+        border-bottom: 1px solid $white
+        +light
+        width: 100%
+        height: 100%
+        &:placeholder
+            color: $black
+    &__btn
+        margin-bottom: 120px
+    small
+        font-size: 1.3rem
+        a
+            color: #d19940
+            text-decoration: underline
