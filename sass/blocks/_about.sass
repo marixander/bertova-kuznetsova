@@ -1,0 +1,36 @@
+.about
+    &__subtitle
+        margin-top: 50px
+        margin-bottom: 70px
+        font-size: 1.4rem
+        line-height: 22px
+        text-align: center
+        span
+            font-size: 16px
+            text-transform: uppercase
+    &__blocks
+        display: flex
+        justify-content: space-around
+    &__block
+        width: 400px
+        font-size: 1.6rem
+        line-height: 22px
+        margin-bottom: 100px
+        &:last-child
+            width: 485px
+        h3
+            text-transform: uppercase
+            +bold
+        li
+            margin-bottom: 10px
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                top: 11px
+                left: -30px
+                display: block
+                width: 2px
+                height: 2px
+                border-radius: 50%
+                background-color: $black
