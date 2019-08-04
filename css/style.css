@@ -645,4 +645,49 @@ button:hover {
 .blog .container-lined:after {
   z-index: 7;
 }
+
+.blog__subtitle {
+  text-align: center;
+  margin-top: -20px;
+  font-size: 1.4rem;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.blog__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog__block {
+  height: 365px;
+  margin-bottom: 70px;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  position: relative;
+}
+
+.blog__block-title {
+  color: #173763;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.blog__block-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
 /*# sourceMappingURL=style.css.map */
