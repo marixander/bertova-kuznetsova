@@ -23,6 +23,8 @@ button
 .btn
     &__primary
         padding: 25px
+        text-align: center
+        +light
         box-shadow: inset 0 0 3px #f5c06b
         background-color: #2e3032
         background-image: linear-gradient(to top, #ce963d 0%, #f5c06b 100%)
@@ -34,14 +36,11 @@ button
         text-shadow: 1px 2px 2px rgba(93, 64, 18, 0.47)
     &__fb
         font-size: 18px
-        vertical-align: center
         border-radius: 3px
         &:before
             font-size: 22px
-            vertical-align: center
     &__insta
         font-size: 28px
-        vertical-align: center
 .side-title
     display: flex
     align-items: center
@@ -95,6 +94,8 @@ button
 .content
     margin-right: 150px
     width: 100%
+    max-height: 100%
+    z-index: 10
     &__title
         padding-top: 40px
         font-size: 3rem
