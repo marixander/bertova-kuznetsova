@@ -1,6 +1,6 @@
 .service
     &__subtitle
-        font-size: 1.4rem
+        font-size: 14px
         text-align: center
         margin-top: -20px
         margin-bottom: 50px
@@ -41,7 +41,7 @@
             width: 1px
             height: 180px
             background-color: #132a4a
-        h3
+        &-title
             color: $secondary-text
             font-size: 2.1rem
             +bold
@@ -51,4 +51,60 @@
             position: absolute
             top: 135px
             transform: translateY(-50%)
-            margin: 0 10px
+            max-width: calc(100% - 20px)
+
+@media (max-width: 1199px)
+    .service
+        &__block
+            flex-basis: 33%
+            &:nth-child(4)
+                &:after
+                    display: block
+            &:nth-child(8)
+                &:after
+                    display: block
+            &:nth-child(3)
+                &:after
+                    display: none
+            &:nth-child(6)
+                &:after
+                    display: none
+            &:nth-child(9)
+                border-bottom: 1px solid #132a4a
+                &:after
+                    display: none
+@media (max-width: 991px)
+    .service
+        &__subtitle
+            font-size: 12px
+            margin-top: 10px
+@media (max-width: 767px)
+    .service
+        &__blocks
+            justify-content: center
+        &__block
+            flex-basis: 50%
+            &:nth-child(3)
+                &:after
+                    display: block
+            &:nth-child(9)
+                border-bottom: 1px solid #132a4a
+                &:after
+                    display: block
+            &:nth-child(10)
+                border-bottom: 1px solid #132a4a
+            &:nth-child(11)
+                &:after
+                    display: none
+            &:nth-child(2n)
+                &:after
+                    display: none
+@media (max-width: 563px)
+    .service
+        &__subtitle
+            margin-bottom: 20px
+        &__blocks
+            padding: 0
+        &__block
+            &-title
+                margin: 0

@@ -6,16 +6,17 @@
         line-height: 22px
         text-align: center
         span
-            font-size: 16px
+            font-size: 1.6rem
             text-transform: uppercase
     &__blocks
         display: flex
         justify-content: space-around
     &__block
-        width: 400px
+        flex-basis: 50%
         font-size: 1.6rem
         line-height: 22px
         margin-bottom: 80px
+        padding: 0 40px
         &:last-child
             width: 485px
         h3
@@ -34,3 +35,25 @@
                 height: 2px
                 border-radius: 50%
                 background-color: $black
+
+@media (max-width: 767px)
+    .about
+        &__blocks
+            flex-wrap: wrap
+        &__block
+            flex-basis: 100%
+@media (max-width: 563px)
+    .about
+        margin-top: 50px
+        &__subtitle
+            margin-top: 25px
+            margin-bottom: 35px
+            text-align: left
+        &__blocks
+            margin-bottom: 30px
+        &__block
+            padding: 0
+            margin: 0
+            li
+                &:before
+                    left: -5px

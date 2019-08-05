@@ -42,6 +42,20 @@
                 <!-- /.social-block -->
             </div>
             <!-- /.header-contacts -->
+            <button class="header__menu-btn">
+                <div class="header__menu-line"></div>
+                <div class="header__menu-line"></div>
+                <div class="header__menu-line"></div>
+            </button>
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
         </div>
         <!-- /.container -->
     </header>
@@ -49,6 +63,12 @@
     <main class="main">
         <section class="hero">
             <div class="container container__hero">
+                <div class="hero__bg">
+                    <img src="./img/hero/hero-bg.jpg" alt="hero" class="hero__bg-img">
+                    <img src="./img/hero/hero-bg-notext.jpg" alt="hero" class="hero__bg-notext">
+                    <img src="./img/hero/hero-text.jpg" alt="text" class="hero__bg-text">
+                    <img src="./img/hero/hero-bg-min.png" alt="hero" class="hero__bg-min">
+                </div>
                 <div class="side-title side-title_white">
                     <p class="side-title__text hero__side-text">Листать вниз</p>
                     <button class="side-title__btn hero__side-btn"></button>
@@ -63,7 +83,7 @@
         </section>
 
         <section class="about">
-            <div class="container container-lined container-lined_white">
+            <div class="container container-lined container-lined_white container__about">
                 <div class="side-title">
                     <p class="side-title__text">О компании</p>
                     <button class="side-title__btn"></button>
@@ -72,8 +92,8 @@
                 <div class="content">
                     <h2 class="content__title">О компании</h2>
                     <p class="about__subtitle">
-                        Bertova&Kuznetsova – <span>это тандем юриста и специалиста по НалогооблОжениЮ.</span><br>
-                        Соединив свои знания и опыт, мы предлагаем вам квалифицированную юридическую помощь. Индивидуальный подход к решению <br>
+                        Bertova&Kuznetsova – <span>это тандем юриста и специалиста по НалогооблОжениЮ.</span>
+                        Соединив свои знания и опыт, мы предлагаем вам квалифицированную юридическую помощь. Индивидуальный подход к решению 
                         каждой задачи, поиск нестандартных решений и сопровождение под ключ.</p>
                     <!-- /.about__subtitle -->
                     <div class="about__blocks">
@@ -195,8 +215,10 @@
         </section>
 
         <section class="consult">
-            <div class="container container-lined container-lined_consult">
-                <img src="./img/consult/consult-bg.jpg" alt="consult" class="consult__bg">
+            <div class="container container-lined container-lined_consult container__consult">
+                <div class="consult__bg">
+                    <img src="./img/consult/consult-bg.jpg" alt="consult" class="consult__bg-img">
+                </div>
                 <div class="side-title side-title_white">
                     <p class="side-title__text">Записаться на консультацию</p>
                     <button class="side-title__btn"></button>
@@ -312,7 +334,7 @@
                                 <img src="./img/team/fb.png" alt="fb">
                             </a> <!-- /.btn__primary team__btn -->
                             <div class="team__text">
-                                <h5 class="team__text-title">Партнер</h5>
+                                <h5 class="team__text-title team__text-title-white">Партнер</h5>
                                 <!-- /.team__text-title -->
                                 <p class="team__text-describe">Окончила Московский государственный юридический университет им. О.Е.Кутафина (МГЮА), по направлению – Юриспруденция.</p>
                                 <!-- /.team__text-describe -->
@@ -408,6 +430,7 @@
                         </form>
                         <a href="#" class="btn__primary btn__primary_mirror contacts__btn">заказать</a>
                         <small>Нажимая на кнопку, Вы соглашаетесь с условиями <a href="#">передачи данных</a></small>
+                        <img src="./img/logo.png" alt="logo" class="contacts__logo">
                     </div>
                 </div>
                 <!-- /.content -->

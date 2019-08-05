@@ -119,6 +119,58 @@ button
         font-size: 3rem
         text-align: center
         +bold
+.subtitle
+    font-size: 14px
+
+@media (max-width: 1365px)
+    .content
+        margin-right: 100px
+    .side-title
+        min-width: 100px
+@media (max-width: 1200px)
+    .content
+        margin-right: 20px
+    .side-title
+        min-width: 65px
+        &__text
+            right: 45px
+        &__btn
+            margin-right: 10px
+@media (max-width: 991px)
+    html
+        font-size: 8px
+    .subtitle
+        font-size: 12px
+        margin-top: 10px
+@media (max-width: 767px)
+    .side-title
+        display: none
+    .content
+        margin-left: 20px
+@media (max-width: 563px)
+    html
+        font-size: 7px
+    .content
+        margin: 0
+        padding: 0 10px
+        &__title
+            font-size: 16px
+            margin-top: 30px
+            padding: 0
+    .team
+        .content
+            padding: 0
+    .blog
+        .content
+            padding: 0
+    .consult
+        .content
+            padding: 0 35px
+    .about
+        .content
+            padding: 0 20px
+
+
 // .section
 //     &_color
 //         width: 100%
